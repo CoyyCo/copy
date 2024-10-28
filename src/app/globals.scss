@@ -1,0 +1,18 @@
+@mixin button-style {
+    padding: 10px 20px;
+    background: #000;
+    border: none;
+    color: #fff;
+    border-radius: 25px;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 0 4px rgb(207, 215, 233);
+    }
+}
+$black1:rgb(0 0 0);
+$black1:#030702;
+$black1:rgb(31 41 55);
+$gray1:#4b5563;
+$gray2:#6b7280;
+$gray3:#9ca3af;

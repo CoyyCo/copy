@@ -1,14 +1,13 @@
 "use client";
 import styles from "./page.module.css";
-import Header from "./components/header/Header";
-import Head from "next/head";
 import { useEffect } from "react";
-export default function Home() {
+import Home from "@/pages/home/Home";
+export default function index() {
   useEffect(() => {
     const handleResize = () => {
       document.documentElement.style.setProperty(
         "--scaleXrate",
-        `${Math.ceil(window.innerWidth / 300)}`
+        `${window.innerWidth / 300}`
       );
     };
 
@@ -21,14 +20,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      <Header></Header>
-      <div
-        style={{
-          height: "110vh",
-          width: "100%",
-          background: "rgb(255,0,0,0.3)",
-        }}
-      ></div>
+      <Home></Home>
     </>
   );
 }

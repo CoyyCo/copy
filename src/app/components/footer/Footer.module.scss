@@ -1,0 +1,42 @@
+@import '@/app/globals.scss';
+
+.footer {
+    padding: 96px 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    gap: 10px;
+    font-size: 14px;
+    .webInfo {
+        width: 320px;
+        // margin-right: 300px;
+        img {
+            width: 128px;
+            height: fit-content;
+        }
+
+        p:first-of-type {
+            color: $gray1;
+            // color: red;
+        }
+
+        p:nth-of-type(2) {
+            color: $gray3;
+        }
+
+        p,
+        div {
+
+            margin-top: 24px;
+        }
+        div{
+            color: $gray1;
+            a{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .pageInfo {
+        
+    }
+}

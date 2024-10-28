@@ -1,0 +1,49 @@
+@import '@/app/globals.scss';
+
+.container {
+    text-align: center;
+    .info {
+        padding: 96px 12px;
+
+        color: rgb(3 7 18);
+
+        .title {
+            h1 {
+                font-size: 50px;
+            }
+        }
+
+        p {
+            color: #6B7280;
+            margin-top: 16px;
+            font-size: 18px;
+        }
+    }
+
+    .btn {
+        @include button-style;
+        padding: 15px 10px 15px 25px;
+        span,svg{
+            vertical-align: middle;
+        }
+        span{
+            margin-right: 10px;
+        }
+    }
+
+    .star {
+        margin: 5px 0;
+        svg,span{
+            vertical-align: bottom;
+            // padding-left: 10px;
+        }
+        .spantext{
+            color: #6B7280;
+            font-size: 12px;
+            padding-left: 10px;
+        }
+        svg{
+            padding-left: 2px;
+        }
+    }
+}
