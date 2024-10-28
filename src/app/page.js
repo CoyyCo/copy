@@ -1,6 +1,6 @@
 "use client";
 import styles from "./page.module.css";
-import { useEffect } from "react";
+import { useEffect, useCallback } from "react";
 import Home from "@/pages/home/Home";
 export default function index() {
   useEffect(() => {

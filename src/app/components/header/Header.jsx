@@ -1,7 +1,6 @@
 import Link from "next/link";
 import styles from "./Header.module.scss";
 import { useEffect, useState } from "react";
-import Head from "next/head";
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
@@ -17,7 +16,7 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handle);
   }, []);
   const gohref = () => {
-    alert('aa')
+    alert("aa");
   };
   return (
     <>
@@ -38,7 +37,9 @@ export default function Header() {
                 <Link href={"/"}>Pricing</Link>
               </li>
               <li>
-                <Link href={"/"}>FQA</Link>
+                <Link href={"/#FAQ"}>
+                  FAQ
+                </Link>
               </li>
             </ul>
           </nav>

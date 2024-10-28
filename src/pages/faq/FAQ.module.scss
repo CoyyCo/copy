@@ -1,0 +1,61 @@
+@import '@/app/globals.scss';
+.container {
+    width: 100%;
+    padding: 6rem 5px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .title {
+        margin-bottom: 16px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .box {
+        .boxQuestion {
+            padding: 16px 0;
+
+            h3 {
+                display: inline;
+                vertical-align: middle;
+                font-size: 18px;
+                color: $black3;
+
+            }
+
+            svg {
+                float: right;
+                margin-top: 3px;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+        }
+
+        p {
+            padding: 0;
+            color: $black4;
+            font-size: 14px;
+            line-height: 20px;
+            max-height: 0;
+            overflow: hidden;
+            margin-bottom: 16px;
+            transition-property: max-height;
+            transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+            transition-duration: .15s;
+
+        }
+
+        .expanded {
+            max-height: 200px; // 设置足够大的高度以容纳所有文本
+            // height: auto;
+
+        }
+
+        border-bottom: 1px solid #9ca3af80;
+    }
+
+
+}

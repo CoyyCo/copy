@@ -1,14 +1,16 @@
 @import '@/app/globals.scss';
 
 .footer {
-    padding: 96px 0;
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-    gap: 10px;
+    padding: 96px 0px;
+    display: flex;
+    align-items: flex-start;
     font-size: 14px;
+    width: 100%;
+    border-top: 1px solid $gray3;
+    // margin: 0 40px;
     .webInfo {
+        flex-grow: 1;
         width: 320px;
-        // margin-right: 300px;
         img {
             width: 128px;
             height: fit-content;
@@ -37,6 +39,19 @@
     }
 
     .pageInfo {
-        
+        // text-align: right;
+        width: 80px;
+        margin-left: 20px;
+        h3{
+            color: $black3;
+        }
+        ul{
+            list-style-type: none;
+            margin-top: 16px;
+            li{
+                margin-top: 32px;
+                color: $gray2;
+            }
+        }
     }
 }
