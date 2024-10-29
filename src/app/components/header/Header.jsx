@@ -7,6 +7,8 @@ export default function Header() {
   useEffect(() => {
     const handle = () => {
       const y = window.scrollY;
+      console.log(y);
+      
       if (y > 100) {
         setIsScrolled(true);
       } else {
