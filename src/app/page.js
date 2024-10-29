@@ -1,7 +1,7 @@
 "use client";
-import styles from "./page.module.css";
-import { useEffect, useCallback } from "react";
-import Home from "@/pages/home/Home";
+import { useEffect } from "react";
+import Home from "@/app/(mainpage)/home/Home";
+import Page from "@/app/(mainpage)/explore/page"
 export default function index() {
   useEffect(() => {
     const handleResize = () => {
@@ -21,6 +21,7 @@ export default function index() {
   return (
     <>
       <Home></Home>
+      {/* <Page></Page> */}
     </>
   );
 }

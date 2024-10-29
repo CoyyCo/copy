@@ -1,6 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import 'animate.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -17,7 +19,7 @@ export const metadata = {
   description: "copy a good website to study",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }) {  
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>

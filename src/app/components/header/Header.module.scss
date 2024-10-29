@@ -1,4 +1,4 @@
-$header-backgroundColor: rgb(250, 250, 250,0.5);
+$header-backgroundColor: rgb(250, 250, 250,0.3);
 @import '@/app/globals.scss';
 .header {
     width: 100%;
@@ -72,8 +72,8 @@ $header-backgroundColor: rgb(250, 250, 250,0.5);
         &::after {
             border-radius: 0px !important;
             transform: scaleX(var(--scaleXrate)) scaleY(1.5);
-            backdrop-filter: blur(18px) !important;
-            -webkit-backdrop-filter: blur(18px) !important;
+            backdrop-filter: blur(10px) !important;
+            -webkit-backdrop-filter: blur(10px) !important;
         }
     }
 }

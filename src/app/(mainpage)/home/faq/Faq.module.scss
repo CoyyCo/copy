@@ -39,19 +39,18 @@
             color: $black4;
             font-size: 14px;
             line-height: 20px;
-            max-height: 0;
+            // max-height: 0;
+            height: 0;
             overflow: hidden;
             margin-bottom: 16px;
-            transition-property: max-height;
+            transition-property: height;
             transition-timing-function: cubic-bezier(.4, 0, .2, 1);
             transition-duration: .15s;
 
         }
 
         .expanded {
-            max-height: 200px; // 设置足够大的高度以容纳所有文本
-            // height: auto;
-
+            height: 50px;
         }
 
         border-bottom: 1px solid #9ca3af80;

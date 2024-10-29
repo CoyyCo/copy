@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import styles from "./Header.module.scss";
 import { useEffect, useState } from "react";
@@ -31,10 +32,10 @@ export default function Header() {
                 <Link href={"/"}>Create</Link>
               </li>
               <li>
-                <Link href={"/"}>Export</Link>
+                <Link href={"/explore"}>Export</Link>
               </li>
               <li>
-                <Link href={"/"}>Pricing</Link>
+                <Link href={"/#Price"}>Pricing</Link>
               </li>
               <li>
                 <Link href={"/#FAQ"}>
