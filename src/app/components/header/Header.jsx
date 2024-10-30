@@ -1,14 +1,15 @@
-"use client"
+"use client";
 import Link from "next/link";
 import styles from "./Header.module.scss";
 import { useEffect, useState } from "react";
+import fetcher from "@/app/lib/fetcher";
+import useSWR from "swr";
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handle = () => {
       const y = window.scrollY;
-      console.log(y);
-      
+
       if (y > 100) {
         setIsScrolled(true);
       } else {
@@ -18,9 +19,19 @@ export default function Header() {
     window.addEventListener("scroll", handle);
     return () => window.removeEventListener("scroll", handle);
   }, []);
-  const gohref = () => {
-    alert("aa");
-  };
+  //GET方法
+  const { data, error } = useSWR('/api/faq', fetcher);
+  // console.log(data);
+  // console.log(error);
+  //POST方法
+  // const { data, error } = useSWR(
+  //   () => "/api/faq",
+  //   (url) => fetcher(url, "POST", { data: "111" }, {}),
+  //   {}
+  // );
+  useEffect(() => {
+    console.log(data);
+  }, [data]);
   return (
     <>
       <header
@@ -40,13 +51,11 @@ export default function Header() {
                 <Link href={"/#Price"}>Pricing</Link>
               </li>
               <li>
-                <Link href={"/#FAQ"}>
-                  FAQ
-                </Link>
+                <Link href={"/#FAQ"}>FAQ</Link>
               </li>
             </ul>
           </nav>
-          <button onClick={gohref}>Try for free</button>
+          <button>Try for free</button>
         </div>
       </header>
     </>

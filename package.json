@@ -10,13 +10,17 @@
   },
   "dependencies": {
     "@icon-park/react": "^1.4.2",
+    "@prisma/client": "^5.21.1",
     "animate.css": "^4.1.1",
+    "mongodb": "^6.10.0",
     "next": "15.0.1",
+    "prisma": "^5.21.1",
     "react": "19.0.0-rc-69d4b800-20241021",
     "react-dom": "19.0.0-rc-69d4b800-20241021",
     "react-slick": "^0.30.2",
     "sass-loader": "^16.0.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "swr": "^2.2.5"
   },
   "devDependencies": {
     "sass": "^1.80.4"
